@@ -4,13 +4,14 @@
   "description": "A simple website built with Node, Express and Pug",
   "main": "server.js",
   "scripts": {
-    "start": "npx nodemon server.js"
+    "start": "npx nodemon --watch src server.js"
   },
   "author": "tlarsen",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "jquery": "^3.4.1",
+    "node-sass": "^4.13.0",
     "pug": "^2.0.3"
   },
   "devDependencies": {
