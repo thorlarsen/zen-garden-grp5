@@ -15,6 +15,6 @@ To start the node dev enironemnt, run this command in the top level directory:
 
 npm run start
 
-If you want to monitor .scsx files, open a new command windoow in the same directory and enter this command:
+If you want to monitor our .scss files, open a new command windoow in the same directory and enter this command:
 
 npm run watch-sass
