@@ -13,5 +13,8 @@ Then, you can start sync'ing with this repository.
 
 To start the node dev enironemnt, run this command in the top level directory:
 
-npm start run
+npm run start
 
+If you want to monitor .scsx files, open a new command windoow in the same directory and enter this command:
+
+npm run watch-sass
