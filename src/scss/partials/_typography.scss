@@ -3,10 +3,9 @@
 $primary-font: 'Nunito', sans-serif;
 $secondary-font: 'Gabriela', serif;
 
-h1,
-h2 {
+h1,h2,h3 {
   font-family: $secondary-font;
-  color: $color-2;
+  color: $color-1;
 }
 
 h1 {
@@ -15,24 +14,34 @@ h1 {
   line-height: 1.2;
   margin: 0 0 0.4em;
 
+  /*
   @include MQ(S) {
     font-size: 3.2rem;
   }
 
   @include MQ(M) {
     font-size: 4rem;
-  }
+  } */
 }
+
 
 h2 {
   font-weight: bold;
   text-transform: uppercase;
   margin: 1em 0;
+  font-size: 1.8rem;
 
+/*
   @include MQ(S) {
     font-size: 1.8rem;
     margin: 1em 0 1.4em;
-  }
+  } */
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 1em 0 1.2em;
 }
 
 section > h2::before {
@@ -41,17 +50,19 @@ section > h2::before {
 }
 
 p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: lighten($color-2, 25%);
+  font-family: $primary-font;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: darken($color-2, 25%);
 
   a {
     color: $color-1;
     text-decoration: underline;
   }
 
+ /*
   @include MQ(S) {
     font-size: 1.6rem;
     line-height: 1.6;
-  }
+  } */ 
 }
