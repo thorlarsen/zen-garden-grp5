@@ -114,7 +114,7 @@ a:active {
 
 .page-wrapper {
   display: grid;
-  grid-template-rows: [first] 1fr 1fr 1fr 1fr 1fr 1fr [end];
+  grid-template-rows: repeat(6, 1fr);
   grid-template-columns: 1fr 2fr 2fr; }
 
 .intro {
