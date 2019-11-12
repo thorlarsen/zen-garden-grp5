@@ -33,13 +33,13 @@
   //intro sub-grid 
   .intro header {
     grid-row: 1 / span 1;
-    grid-column: 2 / span 3;
-    justify-self: center;
+    grid-column: 1 / span 3;
+    justify-self: left;
   }
 
   .summary {
     grid-row: 2 / span 1;
-    grid-column: 5 / -1;
+    grid-column: 1 / 2;
   }
   
   .preamble {
@@ -124,7 +124,7 @@
   .main {
     grid-column: 1 / 3;
     grid-row: 3 / -1 ;
-    @include defgrid(4,2);
+    @include defgrid(5,2);
   }
   
   //main subgrid
@@ -150,9 +150,9 @@
   }
   
   .main footer {
-    grid-column: 1 / 3;
-    grid-row: 4 / -1;
-    align-self: end;
+    grid-column: -1 / -2;
+    grid-row: -1 / -2;
+    align-self: bottom;
   }
   
     // end of main sub-grid
@@ -160,7 +160,11 @@
   
 
   .sidebar{
-    display: none;
+    //display: none;
+    display: flex;
+    grid-row: 6 / -1;
+    grid-column: 1 / 2;
+    align-self: end;
   }
 
 }
