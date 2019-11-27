@@ -5,14 +5,21 @@ $secondary-font: 'Gabriela', serif;
 
 h1,h2,h3 {
   font-family: $secondary-font;
-  color: $color-1;
+  
 }
 
 h1 {
-  font-size: 2.4rem;
+  color: $color-3;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 0.4em;
+  text-shadow:
+  -2px -2px 0 $color-5,
+  2px -2px 0 $color-5,
+  -2px 2px 0 $color-5,
+  2px 2px 0 $color-5;
+  padding: 4%;
+}
 
   /*
   @include MQ(S) {
@@ -22,14 +29,19 @@ h1 {
   @include MQ(M) {
     font-size: 4rem;
   } */
-}
+
 
 
 h2 {
+  color: $color-5;
   font-weight: bold;
   text-transform: uppercase;
   margin: 1em 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  border-top: 5px solid $color-3;
+  border-bottom: 5px solid $color-3;
+  padding: 4%;
+  
 
 /*
   @include MQ(S) {
@@ -39,9 +51,10 @@ h2 {
 }
 
 h3 {
+  color: $color-1;
   font-weight: bold;
   font-size: 1.6rem;
-  margin: 1em 0 1.2em;
+  padding: 2% 2% 0 2%;
 }
 
 section > h2::before {
@@ -51,13 +64,31 @@ section > h2::before {
 
 p {
   font-family: $primary-font;
-  font-size: 1rem;
-  line-height: 1.1;
+  font-size: 1.2rem;
+  line-height: 1.5;
   color: darken($color-2, 25%);
+  padding: 2% 2% 0 2%;
+}
+  
 
   a {
     color: $color-1;
     text-decoration: underline;
+  }
+  footer{
+    background-color: $color-2;
+    font-size: 1rem;
+    padding: 2%;
+    }
+
+  .sidebar{
+    background-color: $color-2;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 2%;
+  }
+  .sidebar h3{
+    color: $color-5;
   }
 
  /*
@@ -65,4 +96,3 @@ p {
     font-size: 1.6rem;
     line-height: 1.6;
   } */ 
-}
