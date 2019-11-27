@@ -147,28 +147,33 @@ xTypography
 
 -------------------------------- */
 h1, h2, h3 {
-  font-family: "Gabriela", serif;
-  color: #094b1a; }
+  font-family: "Gabriela", serif; }
 
 h1 {
-  font-size: 2.4rem;
+  color: #7d3834;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 0.4em;
-  /*
+  text-shadow: -2px -2px 0 #e9ebea, 2px -2px 0 #e9ebea, -2px 2px 0 #e9ebea, 2px 2px 0 #e9ebea;
+  padding: 4%; }
+
+/*
   @include MQ(S) {
     font-size: 3.2rem;
   }
 
   @include MQ(M) {
     font-size: 4rem;
-  } */ }
-
+  } */
 h2 {
+  color: #e9ebea;
   font-weight: bold;
   text-transform: uppercase;
   margin: 1em 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  border-top: 5px solid #7d3834;
+  border-bottom: 5px solid #7d3834;
+  padding: 4%;
   /*
   @include MQ(S) {
     font-size: 1.8rem;
@@ -176,9 +181,10 @@ h2 {
   } */ }
 
 h3 {
+  color: #094b1a;
   font-weight: bold;
   font-size: 1.6rem;
-  margin: 1em 0 1.2em; }
+  padding: 2% 2% 0 2%; }
 
 section > h2::before {
   /* number before each section title */
@@ -186,18 +192,34 @@ section > h2::before {
 
 p {
   font-family: "Nunito", sans-serif;
-  font-size: 1rem;
-  line-height: 1.1;
+  font-size: 1.2rem;
+  line-height: 1.5;
   color: black;
-  /*
+  padding: 2% 2% 0 2%; }
+
+a {
+  color: #094b1a;
+  text-decoration: underline; }
+
+footer {
+  background-color: #031709;
+  font-size: 1rem;
+  padding: 2%; }
+
+.sidebar {
+  background-color: #031709;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 2%; }
+
+.sidebar h3 {
+  color: #e9ebea; }
+
+/*
   @include MQ(S) {
     font-size: 1.6rem;
     line-height: 1.6;
-  } */ }
-  p a {
-    color: #094b1a;
-    text-decoration: underline; }
-
+  } */
 /* -------------------------------- 
 
 xButtons 
