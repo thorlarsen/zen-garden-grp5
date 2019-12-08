@@ -9,19 +9,19 @@
 </style>
 <g>
 	<g>
-		<path class="st0" d="M377.34,353.92l-11.25,21.06l38.6,0.74l-16.84-16.3C387.85,359.41,378.98,351.81,377.34,353.92z"/>
-		<path class="st0" d="M435.55,353.92l11.25,21.06l-38.6,0.74l16.84-16.3C425.04,359.41,433.91,351.81,435.55,353.92z"/>
-		<ellipse class="st0" cx="406.47" cy="372.94" rx="5.26" ry="4.76"/>
+		<path class="st0" d="M219,40.7l-64.9,121.4l222.5,4.3l-97.1-94C279.6,72.4,228.4,28.6,219,40.7z"/>
+		<path class="st0" d="M554.5,40.7l64.9,121.4l-222.5,4.3l97.1-94C493.9,72.4,545.1,28.6,554.5,40.7z"/>
+		<ellipse class="st0" cx="386.9" cy="150.4" rx="30.3" ry="27.4"/>
 	</g>
-	<rect x="355.93" y="410.98" class="st0" width="104.58" height="7.47"/>
-	<rect x="355.93" y="455.81" class="st0" width="104.58" height="7.47"/>
-	<rect x="355.93" y="440.87" class="st0" width="104.58" height="7.47"/>
-	<rect x="355.93" y="425.92" class="st0" width="104.58" height="7.47"/>
-	<rect x="355.93" y="470.08" class="st0" width="104.58" height="7.47"/>
-	<rect x="355.93" y="463.28" class="st1" width="104.58" height="7.47"/>
-	<rect x="355.93" y="448.34" class="st2" width="104.58" height="7.47"/>
-	<rect x="355.93" y="433.39" class="st1" width="104.58" height="7.47"/>
-	<rect x="355.93" y="418.45" class="st2" width="104.58" height="7.47"/>
-	<rect x="351.37" y="374.98" class="st1" width="113" height="36"/>
+	<rect x="95.6" y="369.7" class="st0" width="602.9" height="43.1"/>
+	<rect x="95.6" y="628.1" class="st0" width="602.9" height="43.1"/>
+	<rect x="95.6" y="542" class="st0" width="602.9" height="43.1"/>
+	<rect x="95.6" y="455.8" class="st0" width="602.9" height="43.1"/>
+	<rect x="95.6" y="710.3" class="st0" width="602.9" height="43.1"/>
+	<rect x="95.6" y="671.1" class="st1" width="602.9" height="43.1"/>
+	<rect x="95.6" y="585" class="st2" width="602.9" height="43.1"/>
+	<rect x="95.6" y="498.8" class="st1" width="602.9" height="43.1"/>
+	<rect x="95.6" y="412.7" class="st2" width="602.9" height="43.1"/>
+	<rect x="69.3" y="162.1" class="st1" width="651.4" height="207.5"/>
 </g>
 </svg>
