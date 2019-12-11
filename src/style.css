@@ -170,19 +170,23 @@ a:active {
       transform: rotateY(180deg); }
     100% {
       transform: translateX(0); } }
+  .intro header h1::before {
+    content: "A "; }
+  .intro header > h1::after {
+    content: " Christmas"; }
   .summary {
-    grid-row: 3 / 5;
+    grid-row: 1 / 3;
     grid-column: 7 / 9;
     justify-self: right;
-    align-self: center;
+    align-self: start;
     background-color: #c3a4a2; }
   .preamble {
     grid-row: 5 / 9;
-    grid-column: 1 / 8;
+    grid-column: 1 / 9;
     justify-self: left; }
-  .preamble::after {
+  .preamble::before {
     display: block;
-    width: 65%;
+    width: 100%;
     height: auto;
     margin: auto;
     content: url(../assets/rooftops.svg); }
@@ -195,20 +199,32 @@ a:active {
     grid-row: 5 / -1;
     grid-column: 3 / -1;
     display: grid;
-    grid-template-rows: repeat(6, calc(100% / 6));
+    grid-template-rows: repeat(10, calc(100% / 10));
     grid-template-columns: repeat(6, calc(100% / 6)); }
   .explanation {
     grid-column: 1 / 4;
     grid-row: 1 / 3; }
   .explanation::after {
-    content: url(../assets/holly.svg); }
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    content: url(../assets/candycanes.svg); }
   .participation {
     grid-column: 1 / 4;
-    grid-row: 3 / 4; }
+    grid-row: 5 / 7; }
   .benefits::before {
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: auto;
     content: url(../assets/tree-group.svg); }
   .benefits::after {
-    content: url(../assets/candycanes.svg); }
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    content: url(../assets/holly.svg); }
   .benefits {
     grid-column: 4 / 7;
     grid-row: 1 / 5; }
