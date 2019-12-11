@@ -146,21 +146,45 @@ a:active {
     grid-template-rows: repeat(8, calc(100% / 8));
     grid-template-columns: repeat(8, calc(100% / 8)); }
   .intro header {
-    grid-row: 1 / 7;
-    grid-column: 1 / 6;
-    justify-self: left; }
+    grid-row: 1 / 6;
+    grid-column: 1 / 9;
+    justify-self: left;
+    align-self: start; }
   .intro header::after {
-    content: url(../assets/santa-sleigh.svg); }
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    content: url(../assets/santa-sleigh.svg);
+    animation: fly 15s linear infinite; }
+  @keyframes fly {
+    0% {
+      transform: translateX(0); }
+    40% {
+      transform: translateX(100%); }
+    50% {
+      transform: translateX(100%);
+      transform: rotateY(180deg); }
+    90% {
+      transform: translateX(0);
+      transform: rotateY(180deg); }
+    100% {
+      transform: translateX(0); } }
   .summary {
     grid-row: 3 / 5;
     grid-column: 7 / 9;
     justify-self: right;
+    align-self: center;
     background-color: #c3a4a2; }
   .preamble {
     grid-row: 5 / 9;
     grid-column: 1 / 8;
     justify-self: left; }
   .preamble::after {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin: auto;
     content: url(../assets/rooftops.svg); }
   .sidebar {
     grid-row: 5 / 8;
