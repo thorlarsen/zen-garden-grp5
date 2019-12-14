@@ -71,7 +71,7 @@ h2 {
 .sidebar h3 {
   color: #094b1a; }
 
-.sidebar li, .sidebar a {
+.sidebar li, .sidebar li a {
   color: #c3a4a2; }
 
 .sidebar {
@@ -90,7 +90,7 @@ h1 {
   font-weight: 900;
   line-height: 1.2;
   text-shadow: -2px -2px 0 #e9ebea, 2px -2px 0 #e9ebea, -2px 2px 0 #e9ebea, 2px 2px 0 #e9ebea;
-  padding: 2% 0 0 0;
+  padding: 2%;
   position: relative; }
 
 h2 {
@@ -101,7 +101,7 @@ h2 {
   font-size: 2.5rem;
   border-top: 5px solid #7d3834;
   border-bottom: 5px solid #7d3834;
-  padding: 0 0 0 0;
+  padding: 2%;
   position: relative;
   text-align: left; }
   @media screen and (max-width: 768px) {
@@ -117,7 +117,7 @@ h3 {
 
 p {
   font-family: "Nunito", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: black;
   padding: 2% 2% 0 2%; }

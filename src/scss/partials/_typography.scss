@@ -17,7 +17,7 @@ h1 {
   2px -2px 0 $color-5,
   -2px 2px 0 $color-5,
   2px 2px 0 $color-5;
-  padding: 2% 0 0 0;
+  padding: 2%;
   position: relative;
 }
 
@@ -29,7 +29,7 @@ h2 {
   font-size: 2.5rem;
   border-top: 5px solid $color-3;
   border-bottom: 5px solid $color-3;
-  padding: 0 0 0 0;
+  padding: 2%;
   position: relative;
   text-align: left;
 
@@ -47,7 +47,7 @@ h3 {
 }
 p {
   font-family: $primary-font;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: darken($color-2, 25%);
   padding: 2% 2% 0 2%;
