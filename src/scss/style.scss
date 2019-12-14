@@ -21,39 +21,39 @@
 @include MQ(L) {
   .page-wrapper {
   display: grid;
-  grid-template-rows: repeat(10, 10%);
-  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(8, auto);
   }
 
   .intro {
     grid-row: 1 / 5;
     grid-column: 1 / 9;
-    @include defgrid(8,8);
+    @include defgrid(4,8);
       }
 
   //intro sub-grid 
   .intro header {
-    grid-row: 1 / 6 ;
-    grid-column: 1 / 9;
+    grid-row: 1 / 3 ;
+    grid-column: 1 / 7;
     justify-self: left;
     align-self: start;
   }
   
    .intro header::after {
     display: block;
-    width: 50%;
+    width: 25%;
     height: auto;
-    margin: auto;
+    //margin: auto;
     content: url(../assets/santa-sleigh.svg);
-    animation: fly 15s linear infinite;
+    animation: fly 15s ease-in-out infinite;
   } 
 
   @keyframes fly {
     0% { transform: translateX(0);}
-    40% { transform: translateX(100%);}
-    50% { transform: translateX(100%); transform: rotateY(180deg);}
-    90% { transform: translateX(0); transform: rotateY(180deg);}
-    100% { transform: translateX(0);}
+    40% { transform: translateX(300%);}
+    45% { transform: translateX(300%) rotateY(180deg);}
+    90% { transform: translate(0) rotateY(180deg);}
+    100% {transfor: translate(0);}
   }
 
   .intro header h1::before {
@@ -65,7 +65,7 @@
   }
 
   .summary {
-    grid-row: 1 / 3;
+    grid-row: 1 / 2;
     grid-column: 7 / 9;
     justify-self: right;
     align-self: start;
@@ -73,9 +73,10 @@
   }
   
   .preamble {
-    grid-row: 5 / 9;
+    grid-row: 3 / 5;
     grid-column: 1 / 9;
     justify-self: left;
+    align-self: stretch;
   }
 
   .preamble::before {
@@ -83,22 +84,33 @@
     width: 100%;
     height: auto;
     margin: auto;
+    background-color: $color-5;
     content: url(../assets/rooftops.svg);
   } 
 
   //end of intro sub-grid
 
   .sidebar {
-    grid-row: 5 / 8;
+    grid-row: 5 / -1;
     grid-column: 1 / 3;
+    padding: 15px;
     display: flex;
     flex-direction: column;
+  }
+
+  .sidebar::after {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    content: url(../assets/tree.svg);
   }
 
   .main {
     grid-row: 5 / -1;
     grid-column: 3 / -1;
-    @include defgrid(10,6);
+    @include defgrid(5,6);
   }
 
   //main subgrid
@@ -109,41 +121,50 @@
 
   .explanation::after {
     display: block;
-    width: 75%;
+    width: 35%;
     height: auto;
     margin: auto;
-    content: url(../assets/candycanes.svg);
+    content: url(../assets/gift1.svg);
   }
 
   .participation {
-    grid-column: 1 / 4;
-    grid-row: 5 / 7;
+    grid-column: 4 / -1;
+    grid-row: 1 / 2;
   }
 
-  .benefits::before {
+  .participation::before {
     display: block;
-    width: 75%;
+    width: 55%;
     height: auto;
     margin: auto;
     content: url(../assets/tree-group.svg);
   }
 
-  .benefits::after {
+  .participation::after {
     display: block;
-    width: 75%;
+    width: 35%;
     height: auto;
     margin: auto;
     content: url(../assets/holly.svg);
   }
 
   .benefits {
-    grid-column: 4 / 7;
-    grid-row: 1 / 5;
+    grid-column: 1 / -1;
+    grid-row: 2 / 4;
+    justify-self: start;
+  }
+
+  .benefits::after {
+    display: block;
+    width: 15%;
+    height: auto;
+    margin: auto;
+    content: url(../assets/ornament4.svg)
   }
 
   .requirements {
     grid-column: 1 / -1;
-    grid-row: -3 / -1;
+    grid-row: 4 / -2;
     align-self: start;
   }
 
@@ -151,6 +172,8 @@
     grid-column: 1 / -1;
     grid-row: -2 / -1;
     align-self: end;
+    display: flex;
+    justify-items: space-between;
   }
 
   // end of main sub-grid
@@ -224,10 +247,9 @@
     // end of main sub-grid
   
     .sidebar{
-    //display: none;
-    display: flex;
     grid-row: 6 / -1;
     grid-column: 1 / 2;
+    display: flex;
     align-self: end;
   }
 

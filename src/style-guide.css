@@ -46,6 +46,41 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  background-color: #e9ebea; }
+
+h1 {
+  color: #7d3834; }
+
+h2 {
+  color: #e9ebea; }
+
+.intro h2 {
+  background-color: black; }
+
+.preamble {
+  background-color: #094b1a; }
+
+.preamble p {
+  color: #e9ebea; }
+
+.preamble h3, .sidebar h3 {
+  color: #7d3834;
+  background-color: white; }
+
+.sidebar h3 {
+  color: #094b1a; }
+
+.sidebar li {
+  color: #c3a4a2; }
+
+.sidebar {
+  background-color: #7d3834; }
+
+footer a {
+  color: #c3a4a2;
+  background-color: white; }
+
 /* -------------------------------- 
 
 xBackground 
@@ -151,11 +186,56 @@ h1, h2, h3 {
 
 h1 {
   color: #7d3834;
-  font-size: 4rem;
-  font-weight: 300;
+  font-size: 5rem;
+  font-weight: 900;
   line-height: 1.2;
   text-shadow: -2px -2px 0 #e9ebea, 2px -2px 0 #e9ebea, -2px 2px 0 #e9ebea, 2px 2px 0 #e9ebea;
-  padding: 4%; }
+  padding: 2% 0 0 0;
+  position: relative; }
+
+h2 {
+  color: #e9ebea;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+  font-size: 2.5rem;
+  border-top: 5px solid #7d3834;
+  border-bottom: 5px solid #7d3834;
+  padding: 0 0 0 0;
+  position: relative;
+  text-align: left; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      margin: 1em 0 1.4em; } }
+
+h3 {
+  color: #094b1a;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 2% 2% 0 2%; }
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: black;
+  padding: 2% 2% 0 2%; }
+
+section > h2::before {
+  /* number before each section title */
+  color: #a57774; }
+
+a {
+  text-decoration: underline; }
+
+.preamble p {
+  padding: 2%; }
+
+.preamble h3, .sidebar h3 {
+  padding: 2%;
+  border: 4px dotted #031709;
+  text-align: left; }
 
 /*
   @include MQ(S) {
@@ -165,55 +245,23 @@ h1 {
   @include MQ(M) {
     font-size: 4rem;
   } */
-h2 {
-  color: #e9ebea;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
-  font-size: 2rem;
-  border-top: 5px solid #7d3834;
-  border-bottom: 5px solid #7d3834;
-  padding: 4%;
-  /*
-  @include MQ(S) {
-    font-size: 1.8rem;
-    margin: 1em 0 1.4em;
-  } */ }
-
-h3 {
-  color: #094b1a;
-  font-weight: bold;
-  font-size: 1.6rem;
-  padding: 2% 2% 0 2%; }
-
-section > h2::before {
-  /* number before each section title */
-  color: #a57774; }
-
-p {
-  font-family: "Nunito", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: black;
-  padding: 2% 2% 0 2%; }
-
-a {
-  color: #094b1a;
-  text-decoration: underline; }
-
-footer {
-  background-color: #031709;
-  font-size: 1rem;
-  padding: 2%; }
-
 .sidebar {
-  background-color: #031709;
+  font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 2%; }
 
-.sidebar h3 {
-  color: #e9ebea; }
+footer {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  background-color: #7d3834;
+  font-size: 1rem;
+  padding: 2%; }
+
+footer a {
+  padding: 1%;
+  border: 4px dotted #031709;
+  margin-left: 50px; }
 
 /*
   @include MQ(S) {

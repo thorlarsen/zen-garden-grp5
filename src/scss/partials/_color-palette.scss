@@ -17,3 +17,46 @@ $active-link-color: lighten($color-3, 50%);
 
 $success: #6fce72; // green
 $alert: $color-3; // red
+
+body {
+    background-color: $color-5; 
+    }
+    h1 {
+        color: $color-3;
+    }
+    h2 {
+        color: $color-5;
+      }
+    //Intro
+    .intro h2 {
+        background-color: black;
+    }
+    //Preamble
+    .preamble {
+        background-color: $color-1; 
+        
+    }
+    .preamble p {
+        color: $color-5;      
+    }
+    .preamble h3, .sidebar h3 {
+        color: $color-3;
+        background-color: white;
+    }
+    //Sidebar
+    .sidebar h3 {
+        color: $color-1;
+    }
+    .sidebar li {
+        color: $color-4;
+    }
+    .sidebar{
+        background-color: $color-3;
+    }
+    //Footer
+    footer a {
+        color: $color-4;
+        background-color: white;
+    }
+    
+    
