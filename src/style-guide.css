@@ -71,7 +71,7 @@ h2 {
 .sidebar h3 {
   color: #094b1a; }
 
-.sidebar li {
+.sidebar li, .sidebar a {
   color: #c3a4a2; }
 
 .sidebar {
