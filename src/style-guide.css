@@ -192,6 +192,9 @@ h1 {
   text-shadow: -2px -2px 0 #e9ebea, 2px -2px 0 #e9ebea, -2px 2px 0 #e9ebea, 2px 2px 0 #e9ebea;
   padding: 2%;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 3.5rem; } }
 
 h2 {
   color: #e9ebea;
@@ -214,6 +217,9 @@ h3 {
   font-weight: bold;
   font-size: 1.6rem;
   padding: 2% 2% 0 2%; }
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.2rem; } }
 
 p {
   font-family: "Nunito", sans-serif;
@@ -221,6 +227,9 @@ p {
   line-height: 1.5;
   color: black;
   padding: 2% 2% 0 2%; }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 1rem; } }
 
 section > h2::before {
   /* number before each section title */
@@ -245,11 +254,35 @@ a {
   @include MQ(M) {
     font-size: 4rem;
   } */
+.main > * {
+  padding: 4%; }
+
 .sidebar {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 2%; }
+  .sidebar li {
+    padding: 5%; }
+
+.design-name {
+  text-transform: uppercase; }
+
+a:hover {
+  animation: link-trans 3s linear infinite; }
+
+@keyframes link-trans {
+  /*to {text-decoration: none;
+        background-color: $color-4;
+        color: $color-3;}*/
+  0% {
+    text-decoration: none; }
+  50% {
+    text-decoration: none;
+    background-color: #c3a4a2;
+    color: #7d3834; }
+  100% {
+    text-decoration: none; } }
 
 footer {
   font-family: "Nunito", sans-serif;

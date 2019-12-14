@@ -44,7 +44,7 @@
     width: 25%;
     height: auto;
     //margin: auto;
-    content: url(../assets/santa-sleigh.svg);
+    content: url(assets/santa-sleigh.svg);
     animation: fly 15s ease-in-out infinite;
   } 
 
@@ -85,7 +85,7 @@
     height: auto;
     margin: auto;
     background-color: $color-5;
-    content: url(../assets/rooftops.svg);
+    content: url(assets/rooftops.svg);
   } 
 
   //end of intro sub-grid
@@ -104,7 +104,7 @@
     height: auto;
     margin: auto;
     margin-top: 20px;
-    content: url(../assets/tree.svg);
+    content: url(assets/tree.svg);
   }
 
   .main {
@@ -124,7 +124,7 @@
     width: 35%;
     height: auto;
     margin: auto;
-    content: url(../assets/gift1.svg);
+    content: url(assets/gift1.svg);
   }
 
   .participation {
@@ -137,7 +137,7 @@
     width: 55%;
     height: auto;
     margin: auto;
-    content: url(../assets/tree-group.svg);
+    content: url(assets/tree-group.svg);
   }
 
   .participation::after {
@@ -145,7 +145,7 @@
     width: 35%;
     height: auto;
     margin: auto;
-    content: url(../assets/holly.svg);
+    content: url(assets/holly.svg);
   }
 
   .benefits {
@@ -159,7 +159,7 @@
     width: 15%;
     height: auto;
     margin: auto;
-    content: url(../assets/ornament4.svg)
+    content: url(assets/ornament4.svg)
   }
 
   .requirements {
@@ -204,7 +204,7 @@
     width: 25%;
     height: auto;
     //margin: auto;
-    content: url(../assets/santa-sleigh.svg);
+    content: url(assets/santa-sleigh.svg);
     animation: smallfly 15s ease-in-out infinite;
   } 
 
@@ -235,7 +235,7 @@
     height: auto;
     margin: auto;
     background-color: $color-5;
-    content: url(../assets/rooftops.svg);
+    content: url(assets/rooftops.svg);
   }
   
   .preamble {
@@ -261,7 +261,7 @@
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/ornament4.svg);
+    content: url(assets/ornament4.svg);
   }
   
   .participation {
@@ -274,7 +274,7 @@
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/tree-group.svg);
+    content: url(assets/tree-group.svg);
   }
   
   .benefits {
@@ -287,7 +287,7 @@
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/holly.svg)
+    content: url(assets/holly.svg)
   }
   
   .requirements {
@@ -301,7 +301,7 @@
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/gift2.svg);
+    content: url(assets/gift2.svg);
   }
   
   .main footer {

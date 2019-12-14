@@ -92,6 +92,9 @@ h1 {
   text-shadow: -2px -2px 0 #e9ebea, 2px -2px 0 #e9ebea, -2px 2px 0 #e9ebea, 2px 2px 0 #e9ebea;
   padding: 2%;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 3.5rem; } }
 
 h2 {
   color: #e9ebea;
@@ -114,6 +117,9 @@ h3 {
   font-weight: bold;
   font-size: 1.6rem;
   padding: 2% 2% 0 2%; }
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.2rem; } }
 
 p {
   font-family: "Nunito", sans-serif;
@@ -121,6 +127,9 @@ p {
   line-height: 1.5;
   color: black;
   padding: 2% 2% 0 2%; }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 1rem; } }
 
 section > h2::before {
   /* number before each section title */
@@ -145,11 +154,35 @@ a {
   @include MQ(M) {
     font-size: 4rem;
   } */
+.main > * {
+  padding: 4%; }
+
 .sidebar {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 2%; }
+  .sidebar li {
+    padding: 5%; }
+
+.design-name {
+  text-transform: uppercase; }
+
+a:hover {
+  animation: link-trans 3s linear infinite; }
+
+@keyframes link-trans {
+  /*to {text-decoration: none;
+        background-color: $color-4;
+        color: $color-3;}*/
+  0% {
+    text-decoration: none; }
+  50% {
+    text-decoration: none;
+    background-color: #c3a4a2;
+    color: #7d3834; }
+  100% {
+    text-decoration: none; } }
 
 footer {
   font-family: "Nunito", sans-serif;
@@ -202,7 +235,7 @@ a:active {
     display: block;
     width: 25%;
     height: auto;
-    content: url(../assets/santa-sleigh.svg);
+    content: url(assets/santa-sleigh.svg);
     animation: fly 15s ease-in-out infinite; }
   @keyframes fly {
     0% {
@@ -236,7 +269,7 @@ a:active {
     height: auto;
     margin: auto;
     background-color: #e9ebea;
-    content: url(../assets/rooftops.svg); }
+    content: url(assets/rooftops.svg); }
   .sidebar {
     grid-row: 5 / -1;
     grid-column: 1 / 3;
@@ -249,7 +282,7 @@ a:active {
     height: auto;
     margin: auto;
     margin-top: 20px;
-    content: url(../assets/tree.svg); }
+    content: url(assets/tree.svg); }
   .main {
     grid-row: 5 / -1;
     grid-column: 3 / -1;
@@ -264,7 +297,7 @@ a:active {
     width: 35%;
     height: auto;
     margin: auto;
-    content: url(../assets/gift1.svg); }
+    content: url(assets/gift1.svg); }
   .participation {
     grid-column: 4 / -1;
     grid-row: 1 / 2; }
@@ -273,13 +306,13 @@ a:active {
     width: 55%;
     height: auto;
     margin: auto;
-    content: url(../assets/tree-group.svg); }
+    content: url(assets/tree-group.svg); }
   .participation::after {
     display: block;
     width: 35%;
     height: auto;
     margin: auto;
-    content: url(../assets/holly.svg); }
+    content: url(assets/holly.svg); }
   .benefits {
     grid-column: 1 / -1;
     grid-row: 2 / 4;
@@ -289,7 +322,7 @@ a:active {
     width: 15%;
     height: auto;
     margin: auto;
-    content: url(../assets/ornament4.svg); }
+    content: url(assets/ornament4.svg); }
   .requirements {
     grid-column: 1 / -1;
     grid-row: 4 / -2;
@@ -320,7 +353,7 @@ a:active {
     display: block;
     width: 25%;
     height: auto;
-    content: url(../assets/santa-sleigh.svg);
+    content: url(assets/santa-sleigh.svg);
     animation: smallfly 15s ease-in-out infinite; }
   @keyframes smallfly {
     0% {
@@ -346,7 +379,7 @@ a:active {
     height: auto;
     margin: auto;
     background-color: #e9ebea;
-    content: url(../assets/rooftops.svg); }
+    content: url(assets/rooftops.svg); }
   .preamble {
     grid-row: 3 / -1;
     grid-column: 1 / -1; }
@@ -364,7 +397,7 @@ a:active {
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/ornament4.svg); }
+    content: url(assets/ornament4.svg); }
   .participation {
     grid-column: 1 / 2;
     grid-row: 2 / 3; }
@@ -373,7 +406,7 @@ a:active {
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/tree-group.svg); }
+    content: url(assets/tree-group.svg); }
   .benefits {
     grid-column: 1 / 2;
     grid-row: 3 / 4; }
@@ -382,7 +415,7 @@ a:active {
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/holly.svg); }
+    content: url(assets/holly.svg); }
   .requirements {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
@@ -392,7 +425,7 @@ a:active {
     width: 33%;
     height: auto;
     margin: auto;
-    content: url(../assets/gift2.svg); }
+    content: url(assets/gift2.svg); }
   .main footer {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
